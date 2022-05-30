@@ -10,7 +10,11 @@ namespace SwagApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new OrderedItemsPage());
+            {
+                //BarTextColor = Color.Black;
+                //BarBackgroundColor = (Color)App.Current.Resources["white"];
+            }
         }
 
         protected override void OnStart()

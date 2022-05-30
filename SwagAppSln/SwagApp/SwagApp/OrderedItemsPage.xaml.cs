@@ -18,19 +18,25 @@ namespace SwagApp
             InitializeComponent();
         }
 
-        private void Save_Clicked(object sender, EventArgs e)
+        async void Save_Clicked(object sender, EventArgs e)
         {
-
+            var OrderedItems = (OrderedItems)BindingContext;
+            OrderedItemsDatabase database = OrderedItemsDatabase.Instance;
+            database.SaveOrder(OrderedItems);
+            await Navigation.PopAsync();
         }
 
-        private void Delete_Clicked(object sender, EventArgs e)
+        async void Delete_Clicked(object sender, EventArgs e)
         {
-
+            var OrderedItems = (OrderedItems)BindingContext;
+            OrderedItemsDatabase database = OrderedItemsDatabase.Instance;
+            database.SaveOrder(OrderedItems);
+            await Navigation.PopAsync();
         }
 
-        private void Cancel_Clicked(object sender, EventArgs e)
+        private async void Cancel_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PopAsync();
         }
     }
 }

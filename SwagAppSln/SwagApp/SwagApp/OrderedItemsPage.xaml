@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SwagApp.OrderedItemsPage" Title="{Binding Name}">
 
-    <StackLayout Margin="20"
-    
+    <StackLayout Margin="20">
+
         <Label Text="Name" />
         <Entry Text="{Binding Name}" />
         <Label Text="Gender" />
@@ -17,7 +17,7 @@
         <Entry Text="{Binding TShirtColor}" />
         <Label Text="ShippingAddress" />
         <Entry Text="{Binding ShippingAddress}" />
-        <Button x:Name="Save" Text="Save" Clicked="Save_Clicked" />.
+        <Button x:Name="Save" Text="Save" Clicked="Save_Clicked" />
         <Button x:Name="Delete" Text="Delete" Clicked="Delete_Clicked" />
         <Button x:Name="Cancel" Text="Cancel" Clicked="Cancel_Clicked" />
 
