@@ -24,7 +24,7 @@ namespace SwagApp
 
         public static class Constants
         {
-            public const string DatabaseFilename = "TodoSQLite.db3";
+            public const string DatabaseFilename = "SwagAppSQLite.db3";
 
             public const SQLite.SQLiteOpenFlags Flags =
                 
