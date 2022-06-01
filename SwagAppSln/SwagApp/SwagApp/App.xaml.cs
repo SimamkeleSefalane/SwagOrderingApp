@@ -13,7 +13,7 @@ namespace SwagApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new ItemsList());
+            MainPage = new NavigationPage(new MainPage());
             {
                 BarTextColor = Color.Black;
                 BarBackgroundColor = (Color)App.Current.Resources["white"];

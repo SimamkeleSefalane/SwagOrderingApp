@@ -26,10 +26,10 @@ namespace SwagApp
         }
         private async void AddOrder_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new OrderedItemsPage());
+            await Navigation.PushAsync(new OrderedItemsPage
             {
-                BindingContext = new OrderedItems();
-            }
+                BindingContext = new OrderedItems()
+            });
         }
 
         async void ItemsList_ItemSelected(object sender, SelectedItemChangedEventArgs e)

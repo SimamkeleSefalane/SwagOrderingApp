@@ -16,6 +16,8 @@ namespace SwagApp
         public OrderedItemsPage()
         {
             InitializeComponent();
+
+            
         }
 
        private async void Save_Clicked(object sender, EventArgs e)
