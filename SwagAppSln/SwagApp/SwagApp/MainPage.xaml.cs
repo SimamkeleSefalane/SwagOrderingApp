@@ -15,10 +15,9 @@ namespace SwagApp
             InitializeComponent();
         }
 
-        private void ViewCollection_Clicked(object sender, EventArgs e)
+        private void SearchButton_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ItemsList());
-
         }
     }
 }
